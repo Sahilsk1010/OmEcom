@@ -76,7 +76,7 @@ const Wishlist = require('./router/wishlist');
 
 const PORT = process.env.PORT || 5000
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://127.0.0.1:27017/shoppingdb').then(()=>console.log("Database Connected Successful")).catch((err)=>console.log(err));
+mongoose.connect('mongodb+srv://Sahisk1010:sahilsk1010@cluster0.zt7oku9.mongodb.net/shoppingdb?retryWrites=true&w=majority').then(()=>console.log("Database Connected Successful")).catch((err)=>console.log(err));
 
 app.use(express.static('public'));
 app.use(express.json());
